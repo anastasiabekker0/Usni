@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">proekt1</string>
+    <string name="firstbuttontext">Button</string>
+    <string name="firstplay">play</string>
+    <string name="name">Name</string>
+    <string name="play">play</string>
+    <string name="button">Button</string>
+    <string name="textview">Button</string>
+    <string name="login">TextView</string>
+    <string name="yu">Passvord</string>
+    <string name="buttапо">вход</string>
+    <string name="gi">ведите пароль</string>
+    <string name="gim">ведите логин</string>
+    <string name="textvie">hello ,Admin</string>
+    <string name="kk">TODO</string>
+</resources>
