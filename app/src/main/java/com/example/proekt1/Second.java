@@ -20,8 +20,8 @@ public class Second extends AppCompatActivity {
         EditText login_edit = findViewById(R.id.editTextLpgin);
         EditText pass_edit = findViewById(R.id.edittextPass);
             if (login_edit.getText().toString().equals("login")&&pass_edit.getText().toString().equals("pass")){
-                Intent intent=new Intent(Second.this,name.class);
-                startActivity(intent);
+                Intent cfgmdfh=new Intent(Second.this,name.class);
+                startActivity(cfgmdfh);
             }
 
     }
