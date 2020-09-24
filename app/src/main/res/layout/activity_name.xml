@@ -27,7 +27,7 @@
             android:gravity="center"
             android:text="выберите уровень"
             android:textSize="24sp"
-            android:textStyle="italic" />
+            android:textStyle="bold|italic" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +41,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="35dp"
                 android:onClick="LV_1_Click"
-                android:text="Easy" />
+                android:text="Easy"
+                android:textStyle="bold|italic" />
 
             <Button
                 android:id="@+id/lv2"
@@ -50,7 +51,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="35dp"
                 android:onClick="LV_2_Click"
-                android:text="medium" />
+                android:text="medium"
+                android:textStyle="bold|italic" />
 
             <Button
                 android:id="@+id/lv3"
@@ -59,7 +61,8 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="35dp"
                 android:onClick="LV_3_Click"
-                android:text="hard" />
+                android:text="hard"
+                android:textStyle="bold|italic" />
         </LinearLayout>
 
     </LinearLayout>

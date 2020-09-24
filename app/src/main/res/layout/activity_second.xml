@@ -22,7 +22,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/gim"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textStyle="bold|italic" />
 
         <EditText
             android:id="@+id/edittextPass"
@@ -35,7 +36,8 @@
             android:ems="10"
             android:gravity="center"
             android:hint="@string/gi"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textStyle="bold|italic" />
 
         <Button
             android:id="@+id/ClickBatton"
@@ -44,7 +46,8 @@
             android:layout_margin="100dp"
             android:layout_marginTop="10dp"
             android:onClick="HelloClick"
-            android:text="@string/play" />
+            android:text="@string/play"
+            android:textStyle="bold|italic" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

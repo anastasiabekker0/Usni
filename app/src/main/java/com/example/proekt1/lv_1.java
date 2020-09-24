@@ -50,7 +50,7 @@ public class lv_1 extends AppCompatActivity {
         {
             case 1:
             {
-                params.setMargins(20, 1150, 480, 300);
+                params.setMargins(20, 1140, 480, 310);
                 imageView.setLayoutParams(params);
 
                 int min = 1;
@@ -68,7 +68,7 @@ public class lv_1 extends AppCompatActivity {
             }
             case 2:
             {
-                params.setMargins(500, 500, 500, 500);
+                params.setMargins(500, 540, 500, 460);
                 imageView.setLayoutParams(params);
 
 
@@ -87,12 +87,12 @@ public class lv_1 extends AppCompatActivity {
             }
             case 3:
             {
-                params.setMargins(780, 160, 200, 550);
+                params.setMargins(800, 200, 180, 570);
                 imageView.setLayoutParams(params);
 
 
-                int min = 1;
-                int max = 10;
+                int min = 3;
+                int max = 7;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -106,11 +106,11 @@ public class lv_1 extends AppCompatActivity {
             }
             case 4:
             {
-                params.setMargins(500, 230, 350, 1200);
+                params.setMargins(460, 270, 350, 1150);
                imageView.setLayoutParams(params);
 
-                int min = 1;
-                int max = 15;
+                int min = 5;
+                int max = 10;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -129,8 +129,8 @@ public class lv_1 extends AppCompatActivity {
                 imageView.setLayoutParams(params);
 
 
-                int min = 5;
-                int max = 20;
+                int min = 7;
+                int max = 15;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
