@@ -11,7 +11,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".lv_3"></activity>
         <activity android:name=".lv_2" />
-        <activity android:name=".lv_1" />
+        <activity android:name=".lv_1" >
+
+        </activity>
         <activity android:name=".name" />
         <activity android:name=".Second">
             <intent-filter>

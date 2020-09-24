@@ -13,4 +13,6 @@
     <string name="gim">ведите логин</string>
     <string name="textvie">hello ,Admin</string>
     <string name="kk">TODO</string>
+    <string name="next">next</string>
+    <string name="RETURN">return</string>
 </resources>
