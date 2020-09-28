@@ -7,6 +7,7 @@ import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -20,6 +21,7 @@ public class lv_1 extends AppCompatActivity {
     ImageView imageView;
     ConstraintLayout.LayoutParams params;
     int sw=1;
+    int Result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,14 +35,21 @@ public class lv_1 extends AppCompatActivity {
         lvl(sw);
     }
 
+
     public void Next(View v) {
-        sw++;
-        lvl(sw);
+        EditText ANSWER = findViewById(R.id.answer);
+        if(ANSWER.getText().toString().equals(Integer.toString(Result)))
+  {      sw++;
+        lvl(sw);}
+        else {
+            Toast.makeText(this, "Неправильный ответ", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void Return(View v){
             sw--;
             lvl(sw);
+
     }
 
     private void lvl(int sw)
@@ -64,6 +73,7 @@ public class lv_1 extends AppCompatActivity {
 
                 TextView textView = findViewById(R.id.textView3);
                 textView.setText(num1 + " + " + num2);
+                Result =num1 + num2;
                 break;
             }
             case 2:
@@ -83,6 +93,8 @@ public class lv_1 extends AppCompatActivity {
 
                 TextView textView = findViewById(R.id.textView3);
                 textView.setText(num1 + " + " + num2);
+                Result =num1 + num2;
+
                 break;
             }
             case 3:
@@ -102,6 +114,7 @@ public class lv_1 extends AppCompatActivity {
 
                 TextView textView = findViewById(R.id.textView3);
                 textView.setText(num1 + " + " + num2);
+                Result =num1 + num2;
                 break;
             }
             case 4:
@@ -120,6 +133,7 @@ public class lv_1 extends AppCompatActivity {
 
                 TextView textView = findViewById(R.id.textView3);
                 textView.setText(num1 + " + " + num2);
+                Result =num1 + num2;
 
                 break;
             }
@@ -140,6 +154,7 @@ public class lv_1 extends AppCompatActivity {
 
                 TextView textView = findViewById(R.id.textView3);
                 textView.setText(num1 + " + " + num2);
+                Result =num1 + num2;
                 break;
             }
 
