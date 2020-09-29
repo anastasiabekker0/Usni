@@ -4,34 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon"
+    android:background="@drawable/int2"
+    android:onClick="Next"
     tools:context=".lv_1">
 
     <ImageView
         android:id="@+id/imagine"
         android:layout_width="54dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="145dp"
+        android:layout_marginBottom="204dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.12"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fik" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="269dp"
-        android:layout_height="121dp"
-        android:layout_marginBottom="124dp"
+        android:layout_width="241dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="468dp"
         android:layout_weight="1"
         android:gravity="center"
         android:text="TextView"
-        android:textColor="#214353"
+        android:textColor="#E41515"
         android:textSize="40sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.394"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -42,8 +43,8 @@
         android:gravity="center"
         android:hint="Введите ответ"
         android:inputType="textPersonName"
-        android:textColor="#DEC5EF"
-        android:textColorHint="#C8BBCC"
+        android:textColor="#8C3232"
+        android:textColorHint="#EC0909"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"

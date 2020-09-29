@@ -37,10 +37,19 @@ public class lv_1 extends AppCompatActivity {
 
 
     public void Next(View v) {
+        int lvl_ur=0;
         EditText ANSWER = findViewById(R.id.answer);
-        if(ANSWER.getText().toString().equals(Integer.toString(Result)))
-  {      sw++;
-        lvl(sw);}
+        Random random_1 = new Random();
+        if(ANSWER.getText().toString().equals(Integer.toString(Result))) {
+            lvl_ur = random_1.nextInt(2+ 1);
+
+            switch (lvl_ur)
+            {
+                case 1:{sw++;lvl(sw);break;}
+                case 2:{sw++;sw++;lvl(sw);break;}
+            }
+        }
+
         else {
             Toast.makeText(this, "Неправильный ответ", Toast.LENGTH_SHORT).show();
         }
@@ -59,11 +68,11 @@ public class lv_1 extends AppCompatActivity {
         {
             case 1:
             {
-                params.setMargins(20, 1140, 480, 310);
+                params.setMargins(-110, 1005, 550, 445);
                 imageView.setLayoutParams(params);
 
                 int min = 1;
-                int max = 5;
+                int max = 3;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -78,7 +87,7 @@ public class lv_1 extends AppCompatActivity {
             }
             case 2:
             {
-                params.setMargins(500, 540, 500, 460);
+                params.setMargins(200, 395, 800, 605);
                 imageView.setLayoutParams(params);
 
 
@@ -99,12 +108,12 @@ public class lv_1 extends AppCompatActivity {
             }
             case 3:
             {
-                params.setMargins(800, 200, 180, 570);
+                params.setMargins(500, -120, 480, 850);
                 imageView.setLayoutParams(params);
 
 
                 int min = 3;
-                int max = 7;
+                int max = 6;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -119,11 +128,11 @@ public class lv_1 extends AppCompatActivity {
             }
             case 4:
             {
-                params.setMargins(460, 270, 350, 1150);
+                params.setMargins(480, 570, 400, 870);
                imageView.setLayoutParams(params);
 
                 int min = 5;
-                int max = 10;
+                int max = 7;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -139,12 +148,12 @@ public class lv_1 extends AppCompatActivity {
             }
             case 5:
             {
-                params.setMargins(150, 150, 650, 1300);
+                params.setMargins(600, 850, 430, 530);
                 imageView.setLayoutParams(params);
 
 
                 int min = 7;
-                int max = 15;
+                int max = 10;
                 int diff = max - min;
                 Random random = new Random();
                 int num1 = random.nextInt(diff + 1);
@@ -157,12 +166,31 @@ public class lv_1 extends AppCompatActivity {
                 Result =num1 + num2;
                 break;
             }
-
-            default:{
-                sw = 1;
-                params.setMargins(20, 1150, 480, 300);
+            case 6:
+                params.setMargins(550, 850, 250, 430);
                 imageView.setLayoutParams(params);
+            {
+            int min = 7;
+            int max = 10;
+            int diff = max - min;
+            Random random = new Random();
+            int num1 = random.nextInt(diff + 1);
+            num1 += min;
+            int num2 = random.nextInt(diff + 1);
+            num2 += min;
+
+            TextView textView = findViewById(R.id.textView3);
+            textView.setText(num1 + " + " + num2);
+            Result =num1 + num2;
+            break;
             }
+//
+//
+//            default:{
+//                sw = 1;
+//                params.setMargins(20, 1150, 480, 300);
+//                imageView.setLayoutParams(params);
+//            }
         }
     }
 
